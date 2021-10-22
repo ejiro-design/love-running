@@ -73,6 +73,7 @@ h1, h2{
     height:600px;
     width:100;
     background:url(../images/hero-image.webp) no-repeat center center;
+    clear:both;
 
     /* animation film effect on loading */
     animation-name:hero-zoom;
@@ -231,4 +232,16 @@ footer{
     padding:5%;
     color: #3a3a3a
 
+}
+
+#photos{
+    clear:both;
+    line-height: 0;
+    columns: 4;
+    column-gap: 0;
+}
+
+#photos > img{
+    width:100%;
+    
 }
