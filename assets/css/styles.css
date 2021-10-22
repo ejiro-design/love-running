@@ -23,29 +23,29 @@ h1, h2{
 #logo{
     float:left;
     font-size:280%;
-    margin-left: 30px;
-}
+    margin-left:30px;
+} 
 
 /* nav links */
 #menu{
     font-size:110%;
-    letter-spacing: 4px;
-}
-
-#menu, #logo{
-    line-height:75px;
+    letter-spacing:4px;
 }
 
 #menu li{
     float:right;
     list-style-type: none;
     margin-right:30px;
-}
+} 
 
 #menu a{
     text-decoration:none;
     color:inherit;
-}
+} 
+
+#menu, #logo{
+    line-height:75px;
+} */
 
 #menu a:hover{
     border-bottom:1px solid #3a3a3a
@@ -55,6 +55,18 @@ h1, h2{
     border-bottom:1px solid #3a3a3a
 }
 /* hero-image */
+
+#hero-image{
+    height:700px;
+    width:100%;
+    background:url(../images/hero-image.webp) no-repeat center center;
+    clear:both;
+
+    /* animation film effect on loading */
+    animation-name:hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode:forwards;
+}
 
 #hero-outer{
     height:600px;
@@ -69,17 +81,6 @@ h1, h2{
 
 }
 
-#hero-image{
-    height:600px;
-    width:100;
-    background:url(../images/hero-image.webp) no-repeat center center;
-    clear:both;
-
-    /* animation film effect on loading */
-    animation-name:hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode:forwards;
-}
 
 /* create the level of zoom for hero image */
 
@@ -244,4 +245,34 @@ footer{
 #photos > img{
     width:100%;
     
+}
+
+/* @media  */
+@media screen and (max-width: 1200px){
+    #club-ethos{
+        width:65%;
+        height:1200%;
+        margin: 0 auto;
+    }
+    #welcome{
+        padding:30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about{
+        width:100%;
+        float:left;
+        padding:0;
+    }
+
+    #center-about{
+        clear:both;
+        width:100%;
+        float:left;
+        padding:0;
+    }
+
+    hr{
+        display:none;
+    }
 }
